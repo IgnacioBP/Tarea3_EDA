@@ -22,15 +22,18 @@ private:
 	TreeNode* parent;
 	string data; //data can be of any type
 	TreeList* children;
+	string ubication;
 public:
 	TreeNode();
 	TreeNode(string val);
 	void setParent(TreeNode* node);
 	void setData(string val);
 	void setChildren(TreeList* list);
+	void setUbication();
 	TreeNode* getParent();
 	string getData();
 	TreeList* getChildren();
+	string getUbication();
 	virtual ~TreeNode();
 };
 
