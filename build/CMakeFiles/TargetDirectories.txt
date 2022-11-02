@@ -1,0 +1,3 @@
+C:/Users/ibrav/Desktop/Tarea EDA/build/CMakeFiles/tester.dir
+C:/Users/ibrav/Desktop/Tarea EDA/build/CMakeFiles/edit_cache.dir
+C:/Users/ibrav/Desktop/Tarea EDA/build/CMakeFiles/rebuild_cache.dir
