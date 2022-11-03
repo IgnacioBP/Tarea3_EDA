@@ -20,15 +20,17 @@ void Tree::setRoot(TreeNode* node){
 	}
 }
 void Tree::insert(TreeNode* child, TreeNode* parent){
-	if (parent != nullptr){
+	if (parent != nullptr && parent->isFile()==0){
 		parent->getChildren()->insertFirst(child);
+	} else {
+		std::cout<<"No es posible agregar un elemento dentro de un archivo"<<std::endl;
 	}
 }
 
-void Tree::insert(string val, string val_parent){
+void Tree::insert(string val, string val_parent, int file){
 	TreeNode* parent = find(val_parent);
 	if (parent != nullptr){
-		TreeNode* child = new TreeNode(val);
+		TreeNode* child = new TreeNode(val,file);
 		insert(child, parent);
 		std::cout << "insertado " << val << " in " << val_parent << " at " << parent << std::endl;
 	}
@@ -38,6 +40,8 @@ TreeNode* Tree::find_rec(string val, TreeNode* node){
 	TreeNode* ans = nullptr;
 	if (node != nullptr){
 		if (node->getData() == val){
+			TreeNode* parent=node->getParent();
+			node->setUbication(parent->getData());
 			ans = node;
 		}
 		else{ // search in children
@@ -56,7 +60,6 @@ TreeNode* Tree::find(string val){
 	TreeNode* ans = find_rec(val, root);
 	return ans;
 }
-
 
 void Tree::traverse_rec(TreeNode* node, int level){
 	if (node != nullptr){

@@ -21,17 +21,20 @@ class TreeNode {
 private:
 	TreeNode* parent;
 	string data; //data can be of any type
+	int file;
 	TreeList* children;
 	string ubication;
 public:
 	TreeNode();
 	TreeNode(string val);
+	TreeNode(string val, int file);
 	void setParent(TreeNode* node);
 	void setData(string val);
 	void setChildren(TreeList* list);
-	void setUbication();
+	void setUbication(string ubication);
 	TreeNode* getParent();
 	string getData();
+	int isFile();
 	TreeList* getChildren();
 	string getUbication();
 	virtual ~TreeNode();

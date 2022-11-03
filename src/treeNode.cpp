@@ -19,9 +19,12 @@ TreeNode::TreeNode(): parent(nullptr), data("."), children(new TreeList()) {
 TreeNode::TreeNode(string val): parent(nullptr), data(val), children(new TreeList()),ubication(val) {
 }
 
+TreeNode::TreeNode(string val,int file): parent(nullptr), data(val), file(file),children(new TreeList()),ubication(val) {
+}
+
 void TreeNode::setParent(TreeNode* node){
 	parent = node;
-	setUbication();
+	//setUbication();
 }
 void TreeNode::setData(string val){
 		data = val;
@@ -29,15 +32,18 @@ void TreeNode::setData(string val){
 void TreeNode::setChildren(TreeList* list){
 	children = list;
 }
-void TreeNode::setUbication(){
-	string prev_path=parent->getUbication();
-	if(prev_path=="/"){
-		ubication="/"+ parent->getData();
-	}
-	else{
-		ubication=prev_path+"/"+parent->getData();
-	}
+void TreeNode::setUbication(string ubication){
+	ubication=ubication;
 }
+
+	//string prev_path=parent->getUbication();
+	//if(prev_path=="/"){
+		//ubication="/"+ parent->getData();
+	//}
+	//else{
+		//ubication=prev_path+"/"+parent->getData();
+
+	//}
 
 TreeNode* TreeNode::getParent(){
 	return parent;
@@ -45,6 +51,11 @@ TreeNode* TreeNode::getParent(){
 string TreeNode::getData(){
 	return data;
 }
+
+int TreeNode::isFile(){
+	return file;
+}
+
 TreeList* TreeNode::getChildren(){
 	return children;
 }
