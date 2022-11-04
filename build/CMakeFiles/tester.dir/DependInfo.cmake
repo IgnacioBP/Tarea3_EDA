@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ilcob/Desktop/Tarea3_EDA/Tarea3_EDA/src/tree.cpp" "CMakeFiles/tester.dir/src/tree.cpp.obj" "gcc" "CMakeFiles/tester.dir/src/tree.cpp.obj.d"
-  "C:/Users/ilcob/Desktop/Tarea3_EDA/Tarea3_EDA/src/treeList.cpp" "CMakeFiles/tester.dir/src/treeList.cpp.obj" "gcc" "CMakeFiles/tester.dir/src/treeList.cpp.obj.d"
-  "C:/Users/ilcob/Desktop/Tarea3_EDA/Tarea3_EDA/src/treeListNode.cpp" "CMakeFiles/tester.dir/src/treeListNode.cpp.obj" "gcc" "CMakeFiles/tester.dir/src/treeListNode.cpp.obj.d"
-  "C:/Users/ilcob/Desktop/Tarea3_EDA/Tarea3_EDA/src/treeNode.cpp" "CMakeFiles/tester.dir/src/treeNode.cpp.obj" "gcc" "CMakeFiles/tester.dir/src/treeNode.cpp.obj.d"
-  "C:/Users/ilcob/Desktop/Tarea3_EDA/Tarea3_EDA/tests/tester.cpp" "CMakeFiles/tester.dir/tests/tester.cpp.obj" "gcc" "CMakeFiles/tester.dir/tests/tester.cpp.obj.d"
+  "/home/matias/Universidad/Semestre 2 2022/Estructura de datos y algortimos/Tarea3_EDA/src/tree.cpp" "CMakeFiles/tester.dir/src/tree.cpp.o" "gcc" "CMakeFiles/tester.dir/src/tree.cpp.o.d"
+  "/home/matias/Universidad/Semestre 2 2022/Estructura de datos y algortimos/Tarea3_EDA/src/treeList.cpp" "CMakeFiles/tester.dir/src/treeList.cpp.o" "gcc" "CMakeFiles/tester.dir/src/treeList.cpp.o.d"
+  "/home/matias/Universidad/Semestre 2 2022/Estructura de datos y algortimos/Tarea3_EDA/src/treeListNode.cpp" "CMakeFiles/tester.dir/src/treeListNode.cpp.o" "gcc" "CMakeFiles/tester.dir/src/treeListNode.cpp.o.d"
+  "/home/matias/Universidad/Semestre 2 2022/Estructura de datos y algortimos/Tarea3_EDA/src/treeNode.cpp" "CMakeFiles/tester.dir/src/treeNode.cpp.o" "gcc" "CMakeFiles/tester.dir/src/treeNode.cpp.o.d"
+  "/home/matias/Universidad/Semestre 2 2022/Estructura de datos y algortimos/Tarea3_EDA/tests/tester.cpp" "CMakeFiles/tester.dir/tests/tester.cpp.o" "gcc" "CMakeFiles/tester.dir/tests/tester.cpp.o.d"
   )
 
 # Targets to which this target links.
