@@ -229,27 +229,37 @@ int main(){
         //RM
         if (instruction=="rm"){
             trees::TreeNode* actual_node=actual->getChildren()->find(param1);
-
             if(param2 == ""){
                 //cuando es rm nombre
                 //aca solo buscamos en el treeList si es que es archivo, si es así, tenemos que borarr de manera
                 //que se borre todo lo que esta adentr
-                if(actual_node->isFile()==0){
-                    actual_node->getChildren()->removeAll();
-                    actual->getChildren()->remove(param1);
+                if(actual_node==nullptr){
+                    cout<<"El elemento no existe en la carpeta"<<endl;
                 }
-                else
-                //Si no, usamos el metodo de treeList para eliminar el nodo(archivo)
-                    actual->getChildren()->remove(param1);
+                else{
+                    if(actual_node->isFile()==0){
+                        actual_node->getChildren()->removeAll();
+                        actual->getChildren()->remove(param1);
+                    }
+                    else
+                    //Si no, usamos el metodo de treeList para eliminar el nodo(archivo)
+                        actual->getChildren()->remove(param1);
+                }
             }
             else if(param1=="."){
-                //Borra dentro de la misma carpeta
-                if(actual_node->isFile()==0){
-                    actual_node->getChildren()->removeAll();
-                    actual->getChildren()->remove(param1);
+
+                if(actual_node==nullptr){
+                    cout<<"El elemento no existe en la carpeta"<<endl;
                 }
-                else
-                    actual->getChildren()->remove(param1);
+                else{
+                    //Borra dentro de la misma carpeta
+                    if(actual_node->isFile()==0){
+                        actual_node->getChildren()->removeAll();
+                        actual->getChildren()->remove(param1);
+                    }
+                    else
+                        actual->getChildren()->remove(param1);
+                }
             }
         }
 
