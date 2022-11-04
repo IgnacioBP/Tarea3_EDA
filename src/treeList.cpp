@@ -71,7 +71,11 @@ TreeNode* TreeList::find(string val){
 	TreeListNode* ptr = head;
 	while ((ptr != nullptr) && ((ptr->getData())->getData() != val)){
 		ptr = ptr->getNext();
+
 	}
+	if(ptr==nullptr){
+		return nullptr;
+		}
 	return ptr->getData();
 }
 
