@@ -242,7 +242,7 @@ int main(){
                 //Si no, usamos el metodo de treeList para eliminar el nodo(archivo)
                     actual->getChildren()->remove(param1);
             }
-            else if(param2=="."){
+            else if(param1=="."){
                 //Borra dentro de la misma carpeta
                 if(actual_node->isFile()==0){
                     actual_node->getChildren()->removeAll();
@@ -272,7 +272,7 @@ int main(){
         }
 
         //cd
-        else if(instruction=="cd"){
+        else if(instruction=="cd"){ 
 
             //revisamos para volver a la carpeta anterior y que no sea null el parent
             //por ende, que no sea root el actual
